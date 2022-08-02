@@ -1,0 +1,89 @@
+/*----------------------------------------------------------------
+Finance
+-----------------------------------------------------------------*/
+
+
+.c-finance {
+    max-width: 1272px;
+    width: 92%;
+    margin: 0 auto;
+
+    &__title {
+        &--loan {
+            font-family: $foreign-fonts;
+            font-size: 3.1rem;
+            font-weight: 700;
+            background: #231815;
+            padding: 1px 0 2px;
+            max-width: 409px;
+            width: 100%;
+            display: block;
+            margin: 0 auto 46px;
+            text-align: center;
+            color: #fff;
+            margin-left: calc(50% + 17px);
+            transform: translateX(-50%);
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        font-family: $foreign-fonts;
+        font-size: 2.1rem;
+        line-height: 3.2;
+
+        &--content {
+            width: calc((100% - 64px) / 2);
+            background: #fff;
+            padding: 92px 97px 72px 84px;
+            position: relative;
+        }
+    }
+   
+    &__circle {
+        position: absolute;
+        top: -19px;
+        right: -45px;
+        background: #7a89a8;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        padding-top: 35px;
+
+        &--text {
+            font-size: 3.2rem;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        &--number {
+            font-size: 9.6rem;
+            line-height: 0.6;
+        }
+
+        &--numtxt {
+            font-size: 3.2rem;
+            margin-left: 7px;
+            position: relative;
+            top: -10px;
+        }
+    }
+
+    &__circle::before {
+        content: "";
+        background: url("assets/img/1x/SVG/finance-com.svg") top right no-repeat;
+        width: 39px;
+        height: 45px;
+        position: absolute;
+        top: 135px;
+        left: -7px;
+    }
+}
+
+
+/*----------------------------------------------------------------
+-----------------------------------------------------------------*/

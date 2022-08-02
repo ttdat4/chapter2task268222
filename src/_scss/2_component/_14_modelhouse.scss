@@ -1,0 +1,446 @@
+/*---------------------------------------------------------
+Model House
+---------------------------------------------------------*/
+
+.c-modelhouse {
+    max-width: 1207px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__merit1 {
+        display: flex;
+        justify-content: space-between;
+
+        @include sp {
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        &--des {
+            max-width: 602px;
+
+            @include bp(1254) {
+                padding: 0 10px;
+            }
+
+            .u-logo {
+                max-width: 92px;
+                position: relative;
+                top: 26px;
+                left: 15px;
+
+                @include bp(1254) {
+                    left: 0;
+                }
+
+                @include sp {
+                    max-width: 47px;
+                    top: -20px;
+                    left: 42px;
+                }
+            }
+
+            .u-boxtext {
+                position: relative;
+                display: inline-block;
+                max-width: 500px;
+                margin-left: 98px;
+                padding: 42px 0 136px;
+
+                @include bp(1254) {
+                    margin: 0 10px 0 0;
+                    padding: 35px 0 50px;
+                }
+
+                @include sp {
+                    margin-left: 83px;
+                    padding: 0 32px 0 0;
+                    margin-top: -15px;
+                }
+
+                .is-merit1 {
+                    margin-bottom: 24px;
+
+                    @include sp {
+                        margin-bottom: 9px;
+                    }
+                }
+
+                .is-merit1::before {
+                    content: "";
+                    position: absolute;
+                    top: 9px;
+                    right: 45px;
+                    background: url("assets/img/1x/SVG/tick_mdh.svg") top right no-repeat;
+                    width: 41px;
+                    height: 34px;
+                    background-size: 100%;
+                    @include bp(1254) {
+                        right: 1%;
+                    }
+                    @include sp {
+                        top: -15px;
+                        left: 206px;
+                        width: 22px;
+                    }
+                }
+
+                .u-title {
+                    font-size: 2.8rem;
+                    font-weight: 600;
+                    line-height: calc(33.6pt / 28pt);
+                    letter-spacing: 0.3px;
+
+                    @include sp {
+                        font-size: 1.4rem;
+                        letter-spacing: -0.03em;
+                        margin-left: 2px;
+                    }
+                }
+
+                .is-color {
+                    color: rgb(37, 42, 109);
+                    line-height: calc(43.2pt / 36pt);
+                    font-size: 3.6rem;
+                    font-weight: 600;
+                    display: inline-block;
+                    margin-right: -2.5px;
+
+                    @include sp {
+                        font-size: 1.8rem;
+                        letter-spacing: -0.12em;
+                        margin-left: -2px;
+                    }
+                }
+
+                .u-subtile {
+                    font-size: 2.1rem;
+                    line-height: calc(34pt / 21pt);
+                    letter-spacing: 0.03em;
+                    font-weight: 400;
+                    font-family: $foreign-fonts;
+
+                    @include sp {
+                        font-size: 1.05rem;
+                    }
+                }
+            }
+
+
+        }
+
+        &--img {
+            margin: 61px -8px 0 10px;
+
+            @include bp(1254) {
+                margin: 61px 10px 40px 0;
+
+            }
+
+            @include sp {
+                margin: 10px 42px 0 43px;
+            }
+        }
+    }
+
+    &__merit2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        @include sp {
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-top: 12.6%;
+        }
+
+        &--des {
+            max-width: 602px;
+            position: relative;
+            left: 2%;
+
+            @include bp(1254) {
+                left: 0%;
+                padding: 0 10px;
+            }
+
+            .u-logo {
+                max-width: 92px;
+                position: relative;
+                top: -35px;
+                left: 13px;
+
+                @include sp {
+                    max-width: 47px;
+                    top: -21px;
+                    left: 28px;
+                }
+            }
+
+            .u-boxtext {
+                position: relative;
+                display: inline-block;
+                max-width: 500px;
+                margin-left: 101px;
+                padding: 0 0 106px;
+                margin-top: -21px;
+
+                @include bp(1250) {
+                    margin-left: 10px;
+                    padding: 0 10px 60px 0;
+                }
+
+                @include sp {
+                    margin-left: 69px;
+                    padding: 0 45px 0 0;
+                    margin-top: -16px;
+                }
+
+                .is-merit2 {
+                    margin-bottom: 24px;
+
+                    @include sp {
+                        margin-bottom: 9px;
+                    }
+                }
+
+                .is-merit2::before {
+                    content: "";
+                    position: absolute;
+                    top: -29px;
+                    right: 28px;
+                    background: url("assets/img/1x/SVG/tick_mdh.svg") top right no-repeat;
+                    width: 41px;
+                    height: 34px;
+                    background-size: 100%;
+                    @include bp(1254) {
+                        right: 1%;
+                    }
+                    @include sp {
+                        top: -13px;
+                        left: 218px;
+                        width: 22px;
+                    }
+
+                    @include sp320 {
+                        top: -13px;
+                        right: 41px;
+                        width: 22px;
+                    }
+
+
+                }
+
+                .u-title {
+
+                    font-size: 2.8rem;
+                    font-weight: 600;
+                    line-height: calc(33.6pt / 28pt);
+                    letter-spacing: -0.035em;
+
+                    @include sp {
+                        font-size: 1.4rem;
+                        letter-spacing: -0.02em;
+                        margin-left: 2px;
+                    }
+                }
+
+                .is-color {
+                    color: rgb(37, 42, 109);
+                    line-height: calc(43.2pt / 36pt);
+                    font-size: 3.6rem;
+                    margin-left: -5px;
+                    margin-right: -5px;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+
+                    @include sp {
+                        font-size: 1.8rem;
+                        letter-spacing: 0;
+                        margin-left: -2px;
+                    }
+                }
+
+                .u-subtile {
+                    font-size: 2.1rem;
+                    line-height: calc(34pt / 21pt);
+                    letter-spacing: -0.01em;
+                    font-weight: 400;
+                    font-family: $foreign-fonts;
+
+                    @include sp {
+                        font-size: 1.05rem;
+                        letter-spacing: 0.03em;
+                        margin-left: 1px;
+                    }
+                }
+            }
+        }
+
+        &--img {
+            margin: 0 0 0 18px;
+
+          
+            @include bp(1254) {
+                margin: 61px 10px 50px 0;
+                padding-left: 10px;
+            }
+           
+
+            @include sp {
+                margin: 8px 42px 0 43px;
+            }
+        }
+    }
+
+    &__merit3 {
+        display: flex;
+        justify-content: space-between;
+
+        @include sp {
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-top: 12.5%;
+        }
+
+        &--des {
+            max-width: 602px;
+
+            @include bp(1254) {
+                padding: 0 10px;
+            }
+
+            .u-logo {
+                max-width: 92px;
+                position: relative;
+                top: -36px;
+                left: 14px;
+
+                @include bp(1254) {
+                    left: 0;
+                }
+
+                @include sp {
+                    max-width: 47px;
+                    top: -20px;
+                    left: 36px;
+                }
+            }
+
+            .u-boxtext {
+                position: relative;
+                display: inline-block;
+                max-width: 500px;
+                margin-left: 100px;
+                top: -22px;
+
+                @include bp(1254) {
+                    margin: 0 10px 0 0;
+                }
+
+                @include sp {
+                    margin-left: 76px;
+                    padding: 0 36px 0 0;
+                    margin-top: 6px;
+                }
+
+                .is-merit3 {
+                    margin-bottom: 27px;
+
+                    @include sp {
+                        margin-bottom: 9px;
+                    }
+                }
+
+                .is-merit3::before {
+                    content: "";
+                    position: absolute;
+                    top: -30px;
+                    right: -8px;
+                    background: url("assets/img/1x/SVG/tick_mdh.svg") top right no-repeat;
+                    width: 41px;
+                    height: 34px;
+                    background-size: 100%;
+
+                    @include bp(1254) {
+                        right: 1%;
+                    }
+
+                    @include sp {
+                        top: -14px;
+                        left: 236px;
+                        width: 22px;
+                    }
+
+                }
+
+                .u-title {
+                    font-size: 2.8rem;
+                    font-weight: 600;
+                    line-height: calc(33.6pt / 28pt);
+                    letter-spacing: -0.02em;
+
+                    @include sp {
+                        font-size: 1.4rem;
+                        letter-spacing: 0;
+                        margin-left: 2px;
+                    }
+                }
+
+                .is-color {
+                    color: rgb(37, 42, 109);
+                    line-height: calc(43.2pt / 36pt);
+                    font-size: 3.6rem;
+                    letter-spacing: -0.03em;
+                    margin-left: -5px;
+                    font-weight: 600;
+
+                    @include sp {
+                        font-size: 1.8rem;
+                        letter-spacing: 0;
+                        margin-left: -4px;
+
+                    }
+                }
+
+                .u-subtile {
+                    font-size: 2.1rem;
+                    line-height: calc(34pt / 21pt);
+                    letter-spacing: -0.014em;
+                    font-weight: 400;
+                    font-family: $foreign-fonts;
+
+                    @include sp {
+                        font-size: 1.05rem;
+                        letter-spacing: 0.4px;
+                        margin-left: 1.4px;
+                        padding-top: 1px;
+                    }
+                }
+            }
+        }
+
+        &--img {
+            margin: 0 -8px 0 10px;
+
+            @include bp(1254) {
+                margin: 61px 10px 0 0;
+            }
+
+            @include sp {
+                margin: -11px 42px 0 43px;
+            }
+        }
+    }
+
+}
+
+
+/*---------------------------------------------------------
+---------------------------------------------------------*/

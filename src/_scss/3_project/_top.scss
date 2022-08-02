@@ -1,0 +1,68 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-top {
+    line-height: 2;
+    // margin: 20px 0 ;
+    // padding: 30px 0;
+    //-------------------------------------------------------
+    &1 {
+        background: url("assets/img/1x/bgGrid.png") top center no-repeat;
+        background-size: cover;
+        padding-bottom: 66px;
+        margin-top: 3.7%;
+    }
+    //-------------------------------------------------------
+    &2 {
+        background: url("assets/img/1x/bgGrid.png") top center no-repeat;
+        background-size: cover;
+        padding-bottom: 66px;
+        @include sp {
+            padding-bottom: 72px;
+        }
+    }
+    //-------------------------------------------------------
+    &3 {
+    }
+    //-------------------------------------------------------
+    &4 {
+        position: relative;
+        margin-bottom: 103px;
+        @include sp {
+            margin-bottom: 40px;
+        }
+    }
+
+    &4::before {
+        content: "";
+        background: #ededed;
+        max-width: 1205px;
+        width: 63%;
+        height: 527px;
+        position: absolute;
+        top: calc(100% - 705px);
+        right: 0;
+        z-index: -1;
+        @include sp {
+            max-width: 390px;
+            width: 52%;
+            height: 257px;
+            top: 164px;
+        }
+    }
+
+    &5 {
+        margin-bottom: 90px;
+    }
+
+    &6 {
+        padding: 82px 0 110px;
+        background: #ededed;
+        margin-bottom: 67px;
+
+    }
+
+    &7 {
+        margin-bottom: 116px;
+    }
+}

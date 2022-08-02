@@ -1,0 +1,232 @@
+/*-----------------------------------------
+content
+------------------------------------------*/
+
+.c-content {
+    display: flex;
+    max-width: 1544px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+    @include bp(1254) {
+        width: 100%;
+    }
+  
+    @include sp {
+        width: 100%;
+        flex-direction: column;
+        padding: 0 16px 0 31px;
+        align-items: center;
+    }
+
+
+    &__list {
+        display: block;
+        width: calc((100% - 100px) / 3);
+        margin: 0 0 10px;
+
+        @include bp(1254) {
+            width: calc((100% - 35px) / 3);
+        }
+       
+        @include sp {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &--num {
+            position: relative;
+            font-family: $roboto-font;
+            padding-left: 22px;
+            margin-top: -4px;
+
+            @include bp(1254) {
+                padding-left: 0;
+            }
+
+            @include sp {
+                padding-left: 22px;
+                margin: -12px 0 0 -8px;
+            }
+
+            .u-txt1 {
+                font-size: 21.3rem;
+                color: #ededed;
+                line-height: calc(256.22pt / 213.52pt);
+                font-weight: 600;
+
+               
+                @include sp {
+                    font-size: 15rem;
+                }
+            }
+
+            .u-txtcase {
+                color: #c7c7c7;
+                position: absolute;
+                font-size: 2.4rem;
+                font-weight: 600;
+                line-height: calc(28.8pt / 24pt);
+                position: absolute;
+                top: 150px;
+                left: 110px;
+                letter-spacing: 0.25em;
+
+                @include bp(1254) {
+                    left: 80px;
+                }
+
+                @include sp {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .u-txtca1 {
+                @include sp {
+                    top: 102px;
+                    left: 84px;
+                }
+            }
+
+            .u-txtca2 {
+                @include sp {
+                    top: 103px;
+                    right: 59px;
+                }
+            }
+
+            .u-txtca3 {
+                @include sp {
+                    top: 104px;
+                    left: 84px;
+                }
+            }
+        }
+
+        &--com {
+            position: relative;
+            margin-top: -28px;
+            height: 35.3%;
+            @include sp {
+                margin-top: -24px;
+                max-width: 327px;
+            }
+
+            .u-txtans {
+                font-size: 2.4rem;
+                max-width: 474px;
+                width: 100%;
+                line-height: calc(28.8pt / 24pt);
+                background: #000;
+                color: #fff;
+                display: block;
+                text-align: center;
+                padding: 51px 10px 53px;
+                border-radius: 8px;
+                font-weight: 600;
+                margin-top: 4px;
+                letter-spacing: -0.07em;
+                height: 100%;
+               
+                @include sp {
+                    max-width: 666px;
+                    width: 100%;
+                    font-size: 1.6rem;
+                    letter-spacing: -0.3px;
+                    padding: 34px 3px 33px 7px;
+                    border-radius: 5px;
+                }
+            }
+
+            .u-txtans::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 30px solid #000;
+                top: -28px;
+                left: 134px;
+              
+                @include bp(1254) {
+                    left: 50px;
+                }
+
+                @include sp {
+                    top: -20px;
+                    left: 92px;
+                }
+                
+            }
+
+            .u-ca3 {
+                @include sp {
+                    padding: 36px 19px 34px 9px;
+                    letter-spacing: -0.07em;
+                }
+            }
+
+            .u-rote {
+                @include sp {
+                    padding: 35px 0 33px;
+                }
+            }
+
+            .u-rote::before {
+                
+                @include sp {
+                    top: -18px;
+                    left: 219px;
+                    transform: rotate(23deg);
+                }
+            }
+
+            .u-txtans2 {
+                font-size: 1.8rem;
+                font-family: $foreign-fonts;
+                background: #7a89a8;
+                max-width: 212px;
+                font-weight: 400;
+                line-height: 1.2;
+                width: 100%;
+                display: block;
+                text-align: center;
+                border-radius: 100px;
+                position: absolute;
+                padding: 8px 0 7px;
+                top: -13px;
+                right: -3px;
+                color: #fff;
+                letter-spacing: -0.03em;
+              
+                @include sp {
+                    font-size: 1.2rem;
+                    max-width: 147px;
+                    padding: 5px 16px 6px 11px;
+                    left: -5px;
+                    top: -10px;
+                }
+            }
+
+            .u-03case {
+                @include sp {
+                    font-size: 1.2rem;
+                    max-width: 147px;
+                    padding: 6px 7px 4px 12px;
+                    left: calc(100% - 141px);
+                    top: -8px;
+                    letter-spacing: 0.01em;
+                }
+                
+            }
+            
+        }
+
+    }
+}
+
+
+/*-----------------------------------------
+------------------------------------------*/

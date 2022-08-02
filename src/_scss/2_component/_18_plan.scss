@@ -1,0 +1,115 @@
+/*------------------------------------------------------
+Plan
+------------------------------------------------------*/
+
+.c-plan {
+    &__img {
+        display: flex;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        padding: 0;
+    }
+
+    &__img::before {
+        content: "1F";
+        position: absolute;
+        background: #000;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 100%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -18px;
+        left: 5.2%;
+    }
+
+    &__img::after {
+        content: "2F";
+        position: absolute;
+        background: #000;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 100%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -18px;
+        left: 60.4%;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.2rem;
+        margin: 66px 0 101px;
+        font-weight: 400;
+        padding: 0 97px 0 123px;
+
+        @include sp {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            font-size: 1.15rem;
+        }
+
+        span {
+            margin: 0 10px;
+        }
+      
+    }
+
+    &__product {
+        max-width: 1194px;
+        width: 98%;
+        margin: 0 auto;
+        padding-left: 12px;
+
+        &--item {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 2.5rem;
+            padding: 13px 0 2px;
+            border-bottom: 1px #cbcbcb solid;
+
+            dt {
+                max-width: 128px;
+                width: 100%;
+                margin-right: 140px;
+            }
+
+            dd {
+               
+                display: flex;
+                justify-content: flex-start;
+                max-width: 919px;
+                width: 100%;
+                padding-left: 10px;
+
+                p {
+                    font-size: 2rem;
+                    border: 1px #cbcbcb solid;
+                    border-radius: 3px;
+                    margin-right: 20px;
+                }
+
+                a {
+                    padding: 12px;
+                    line-height: 2;
+                }
+            }
+        }
+
+        &--item + &--item {
+            padding: 28px 0 2px;
+        }
+    }
+}
+
+/*------------------------------------------------------
+------------------------------------------------------*/

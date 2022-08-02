@@ -1,0 +1,85 @@
+/*------------------------------------------------------------
+Design
+------------------------------------------------------------*/
+
+.c-design {
+    width: 650px;
+    margin: 10px 123px 0 auto;
+
+    @include sp {
+        max-width: 100%;
+        padding: 75px 28px 46px;
+        margin: 0;
+    }
+
+    &__title {
+        font-size: 4.8rem;
+        font-family: $oswald-font;
+        letter-spacing: 0.06em;
+        font-weight: 300;
+        position: relative;
+        color: #000;
+        margin: 0 0 27px 3px;
+        text-align: left;
+        letter-spacing: 0.1em;
+
+        @include sp {
+            font-size: 2.4rem;
+            margin-bottom: 6px;
+            padding-bottom: 15px;
+        }
+    }
+
+    &__title::before {
+        content: "";
+        background: #c8c5c4;
+        width: 57px;
+        height: 1px;
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        transform: inherit;
+
+        @include sp {
+            width: 29px;
+            bottom: 7px;
+        }
+    }
+
+    &__des1 {
+        font-size: 2.7rem;
+        margin-bottom: 34px;
+        color: #231815;
+        font-weight: 400;
+        padding-top: 17px;
+        line-height: 1.4;
+
+        @include sp {
+            font-size: 1.35rem;
+            margin-bottom: 16px;
+            padding-top: 0;
+            margin-left: 4px;
+            line-height: 1.5;
+        }
+    }
+
+    &__des2 {
+        font-size: 1.9rem;
+        line-height: 1.79;
+        color: #231815;
+        font-weight: 300;
+
+        @include sp {
+            font-size: 1rem;
+            letter-spacing: -0.6px;
+            line-height: 1.75;
+            margin-left: 4px;
+        }
+    }
+
+}
+
+
+
+/*------------------------------------------------------------
+------------------------------------------------------------*/

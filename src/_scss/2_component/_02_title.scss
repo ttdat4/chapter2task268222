@@ -1,0 +1,130 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-title {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 36px;
+    padding-top: 17px;
+
+    @include bp(1254) {
+        padding-left: 0;
+    }
+
+    @include sp {
+        width: 100%;
+        margin: 0 auto;
+        padding: 22px 0 0;
+    }
+
+    .u-title {
+        font-size: 3.6rem;
+        font-family: $foreign-fonts;
+        margin-bottom: 3px;
+        text-align: center;
+        font-weight: 400;
+        line-height: calc(43.03pt / 35.86pt);
+        letter-spacing: -0.01em;
+
+        @include bp(1254) {
+            letter-spacing: -0.04em;
+        }
+
+        @include sp {
+            font-size: 1.5rem;
+        }
+    }
+
+
+
+    .u-subtitle {
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+}
+
+
+
+.c-title2 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 31px;
+
+    @include sp {
+        width: 62%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 14px;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        margin-bottom: -8px;
+
+        @include bp(1254) {
+            padding: 0 10px 0 0;
+        }
+
+        @include sp {
+            line-height: 1;
+            margin-bottom: 0;
+            margin-top: -2px;
+        }
+    }
+
+    &__title {
+        font-size: 3.4rem;
+        text-align: center;
+        font-weight: 400;
+        font-family: $foreign-fonts;
+        padding-left: 40px;
+
+        @include bp(1254) {
+            letter-spacing: -0.03em;
+            padding: 0;
+        }
+
+        @include sp {
+            font-size: 1.3rem;
+            padding: 0;
+            
+
+        }
+    }
+
+    &__titlecolor {
+        font-size: 4.6rem;
+        color: #252a6d;
+        font-family: $font-4;
+        font-weight: 400;
+
+        @include sp {
+            font-size: 1.73rem;
+
+        }
+    }
+
+    &__subtitle {
+        font-size: 4.8rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: $oswald-font;
+        letter-spacing: 4.5px;
+        margin-left: 44px;
+
+        @include sp {
+            font-size: 1.15rem;
+            margin: 0;
+            letter-spacing: 1.3px;
+        }
+    }
+}

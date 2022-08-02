@@ -1,0 +1,179 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    width: 100%;
+    font-family: $primary-fonts;
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    // @include sp {
+    //     min-width: 320px;
+    // }
+}
+
+//-------------------------------------------------------
+main {
+    // padding: 0px 0 100px;
+}
+
+section {
+    display: block;
+    //padding: 50px 0 90px;
+}
+
+//-------------------------------------------------------
+.l-container {
+    width: $base-width;
+    margin: 0 auto;
+}
+
+.l-wrappoint {
+    max-width: 1740px;
+    width: 100%;
+    margin: 99px auto;
+    @include sp {
+        margin: 0 auto;
+    }
+}
+
+.l-present {
+    background: #565f64;
+    color: #fff;
+    position: relative;
+    padding: 80px 193px 48px 226px;
+    margin-bottom: 123px;
+    font-weight: 300;
+    max-width: 1192px;
+    width: 90%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.l-present::before {
+    content: "";
+    background: url("") top right no-repeat;
+    position: absolute;
+    width: 225px;
+    height: 130px;
+    top: 7px;
+    right: 29px;
+    z-index: 1;
+}
+
+.l-slidewrap {
+    max-width: 1440px;
+    width: 90%;
+
+    @include sp {
+        max-width: 100%;
+        width: 90%;
+    }
+}
+
+.l-botslide {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+
+    @include sp {
+        display: inherit;
+        padding-left: 0;
+    }
+}
+
+.l-planwrap {
+    max-width: 1254px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-webwrap {
+    max-width: 1709px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.l-wrapwebmask {
+    max-width: 1196px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px rgba(35, 24, 21, 0.25) solid;;
+}
+//-------------------------------------------------------
+.c-mainvisual {
+    background: url("/assets/img/bg-main.png") top center no-repeat;
+    background-size: cover;
+    padding: 327px 0 264px;
+    height: 100vh;
+    min-height: 1053px;
+
+    @include sp {
+        background-image: url("assets/img/1x/mainSP1.png");
+        padding: 106px 0 108px;
+        min-height: auto;
+        height: auto;
+    }
+
+    &__inner:hover {
+        opacity: 0.49;
+    }
+
+    &__inner {
+        max-width: 434px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 114px 52px 84px 53px;
+        background: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        margin-left: calc(50% + 17px);
+        transform: translateX(-50%);
+
+        @include sp {
+            max-width: 217px;
+            padding: 58px 19px 41px 21px;
+            margin-left: calc(50% + 0px);
+        }
+
+        &--logo {
+            max-width: 228px;
+            margin: 0 auto 48px;
+
+            @include sp {
+                width: 114px;
+                margin-bottom: 28px;
+            }
+
+            a:hover {
+                opacity: 0.7;
+            }
+        }
+
+        p {
+            margin: 0 0 34px -18px;
+            font-family: $font-4;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.1em;
+            color: #000;
+
+            @include sp {
+                font-size: 1rem;
+                margin-bottom: 13px;
+                margin-left: -9px;
+            }
+        }
+
+        &--open {
+            margin-left: 8px;
+            @include sp {
+                margin-left: 15px;
+            }
+        }
+    }
+
+
+
+
+
+   
+}
